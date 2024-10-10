@@ -6,14 +6,14 @@ const HomePage = () => {
         <div id='profile-fixed'>
                 <h1>Tom Tutone</h1>
                 <h2>Junior Full Stack Developer</h2>
-                <h4 id='bio-desc'>
+                <p id='bio-desc'>
                     I'm a full stack developer who loves creative challenges and learning new skills.
-                </h4>
+                </p>
         </div>
         
         <div className='body'>
             <div id='about'>
-                <img src='/tt-portrait-2.jpg' id='tt-pic'/>
+                <img src='/profile-pics/tt-portrait-2.jpg' id='tt-pic'/>
                 <h2>About</h2>
                 <p>
                     I have recently completed a Diploma of Information Technology where I gained comprehensive skills creating full stack applications.
@@ -23,8 +23,94 @@ const HomePage = () => {
                     the DOM, JS objects and component lifecycles can be best structured to create responsive and fast-loading webpages.
                 </p>
                 <p>
-                    I am skilled at designing and implementing back end servers and APIs. As part of my studies, I have created a user database for a MERN stack veterinary website as well as a RESTful API for a childcare management application using Flask and PostgreSQL.
+                    I also enjoy working with data and APIs. As part of my studies, I created a user database for a MERN stack veterinary website as well as a RESTful API for a childcare management application using Flask and PostgreSQL.
                 </p>
+            </div>
+            <div id='projects'>
+                
+                <h2>Key Projects</h2>
+                <div className='projects-grid'>
+                    <div className='project-label'>
+                        <h3>
+                            <em>Pawfect Care</em> MERN Stack Application
+                        </h3>
+                        <h4>
+                            <a href='https://github.com/tthecoder15/T3A2-MERN-App/tree/main/T3A2-B' target='_blank'><em>Github Repo</em></a>
+                        </h4>
+                    </div>
+                    <div className='project-desc'>
+                        <p>Veterinary clinic web application with user, pet and appointment registration.</p>
+                        <p>Designed and implemented back end using Express with thorough validation.</p>
+                        <p>Created appointment booking form including dynamic time buttons.</p>
+                    </div>
+                    <div className='proj-ss-cont'>
+                        <a href='https://pawfect-care.netlify.app/' target='_blank'>
+                            <img className='proj-ss' src='/project-ss/pc-3-booking-form.png'/>
+                        </a>
+                    </div>
+                </div>
+
+                <div className='projects-grid'>
+                    <div className='project-label'>
+                        <h3>
+                            Childcare Management API
+                        </h3>
+                        <h4>
+                            <a href='https://github.com/tthecoder15/T2A2-API-Webserver' target='_blank'><em>Github Repo</em></a>
+                        </h4>
+                    </div>
+                    <div className='project-desc'>
+                        <p>API and database project for a Childcare service.</p>
+                        <p>Provides functionality required to faciliate communication between parents and educators.</p>
+                        <p>Contains user and admin validation, child, attendance, comments, pick-up contact registration.</p>
+                    </div>
+                    <div className='proj-ss-cont'>
+                        <a href='https://github.com/tthecoder15/T2A2-API-Webserver#r8-explain-how-to-use-this-applications-api-endpoints-each-endpoint-should-be-explained-including-the-following-data-for-each-endpoint-6' target='_blank'>
+                            <img className='proj-ss' src='/project-ss/ct-1-post-comment.png'/>
+                        </a>
+                    </div>
+                </div>
+
+                <div className='projects-grid'>
+                    <div className='project-label'>
+                        <h3>
+                            Pokémon Card Search Engine
+                        </h3>
+                        <h4>
+                            <a href='https://github.com/tthecoder15/pkmn-tech-search-v2/tree/main' target='_blank'><em>Github Repo</em></a>
+                        </h4>
+                    </div>
+                    <div className='project-desc'>
+                        <p>A fan-made search engine to filter Pokémon cards based on their attributes.</p>
+                        <p>Handles data from public API <a href='https://pokemontcg.io/' target='_blank'>Pokemon TCG API</a>.</p>
+                    </div>
+                    <div className='proj-ss-cont'>
+                        <a href='https://pokemon-tech-search.netlify.app/search' target='_blank'>
+                            <img className='proj-ss' src='/project-ss/pts-search-2.png'/>
+                        </a>
+                    </div>
+                </div>
+
+                <div className='projects-grid'>
+                    <div className='project-label'>
+                        <h3>
+                            CLI Guessing Game
+                        </h3>
+                        <h4>
+                            <a href='https://github.com/tthecoder15/Pokemon-Card-Guessing-Game-CLI-Application' target='_blank'><em>Github Repo</em></a>
+                        </h4>
+                    </div>
+                    <div className='project-desc'>
+                        <p>A terminal game where players are presented with clues and must guess a mystery Pokémon card from the original six expansions.</p>
+                        <p>Features score saving and scoreboard functionality as well as a standard and hard mode.</p>
+                    </div>
+                    <div className='proj-ss-cont'>
+                        <a href='https://github.com/tthecoder15/Pokemon-Card-Guessing-Game-CLI-Application?tab=readme-ov-file#help' target='_blank'>
+                            <img className='proj-ss' src='/project-ss/cli-2-correct-guess.png'/>
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
