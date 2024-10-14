@@ -76,9 +76,17 @@ h1, h2 {
   margin-bottom: 0rem;
 }
 
+h3, h4 {
+  margin: 0.5rem 0;
+}
+
 h1 {
   font-size: 2.5rem;
   
+}
+
+.section-heading {
+  margin: 1rem 0;
 }
 
 :root {
@@ -141,15 +149,48 @@ h1 {
   flex-direction: column;
 }
 
+/* Education section grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+      "ed-label ed-desc";
+      /* "proj-ss proj-ss"; */
+  gap: 0 1.5rem;
+}
+
+.experience-label {
+  grid-area: ed-label;
+  /* margin: auto; */
+}
+
+.experience-desc {
+  grid-area: ed-desc;
+}
+
 /* Project section grid */
-.projects-grid {
+#projects:hover .project{
+  opacity: 0.3;     
+}
+
+#projects .project:hover {
+  transform: scale(1.02);
+  opacity: 1; 
+}
+
+
+.project {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: 
       "proj-label proj-desc"
       "proj-ss proj-ss";
   gap: 0 1.5rem;
+  padding: 0 1rem;
+  transition: 1.2s;
 }
+
+
 
 .project-label {
   grid-area: proj-label;

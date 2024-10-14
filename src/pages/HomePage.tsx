@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HomePage = () => {
   return (
     <div className='main'>
@@ -11,8 +9,8 @@ const HomePage = () => {
                 </p>
         </div>
         
-        <div className='body'>
-            <div id='about'>
+        <div className='body'>           
+            <div className='section-heading' id='about'>
                 <img src='/profile-pics/tt-portrait-2.jpg' id='tt-pic'/>
                 <h2>About</h2>
                 <p>
@@ -26,17 +24,65 @@ const HomePage = () => {
                     I also enjoy working with data and APIs. As part of my studies, I created a user database for a MERN stack veterinary website as well as a RESTful API for a childcare management application using Flask and PostgreSQL.
                 </p>
             </div>
+
+            <div id='experience'>
+                <h2 className='section-heading'>Experience</h2>
+                <div className='experience-grid'>
+                    <div className='experience-label'>
+                        <h3>
+                            2024
+                        </h3>
+                    </div>
+                    <div className='experience-desc'>
+                        <h3>Diploma of Information Technology</h3>
+                        <p>
+                            <em>Coder Academy</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div className='experience-grid'>
+                    <div className='experience-label'>
+                        <h3>
+                            2023
+                        </h3>
+                    </div>
+                    <div className='experience-desc'>
+                        <h3>Responsive Web Design Certificate</h3>
+                        <p>
+                            <em>freeCodeCamp</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div className='experience-grid'>
+                    <div className='experience-label'>
+                        <h3>
+                            2021
+                        </h3>
+                    </div>
+                    <div className='experience-desc'>
+                        <h3>Bachelor of Film and Television Honours</h3>
+                        <p>
+                            <em>Swinburne University</em>
+                        </p>
+                        <p>Graduated with First Class Honours</p>
+                    </div>
+                </div>
+
+            </div>
+
             <div id='projects'>
                 
-                <h2>Key Projects</h2>
-                <div className='projects-grid'>
+                <h2 className='section-heading'>Key Projects</h2>
+                <div className='project'>
                     <div className='project-label'>
                         <h3>
                             <em>Pawfect Care</em> MERN Stack Application
                         </h3>
-                        <h4>
+                        <p>
                             <a href='https://github.com/tthecoder15/T3A2-MERN-App/tree/main/T3A2-B' target='_blank'><em>Github Repo</em></a>
-                        </h4>
+                        </p>
                     </div>
                     <div className='project-desc'>
                         <p>Veterinary clinic web application with user, pet and appointment registration.</p>
@@ -50,14 +96,14 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='projects-grid'>
+                <div className='project'>
                     <div className='project-label'>
                         <h3>
                             Childcare Management API
                         </h3>
-                        <h4>
+                        <p>
                             <a href='https://github.com/tthecoder15/T2A2-API-Webserver' target='_blank'><em>Github Repo</em></a>
-                        </h4>
+                        </p>
                     </div>
                     <div className='project-desc'>
                         <p>API and database project for a Childcare service.</p>
@@ -71,14 +117,14 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='projects-grid'>
+                <div className='project'>
                     <div className='project-label'>
                         <h3>
                             Pokémon Card Search Engine
                         </h3>
-                        <h4>
+                        <p>
                             <a href='https://github.com/tthecoder15/pkmn-tech-search-v2/tree/main' target='_blank'><em>Github Repo</em></a>
-                        </h4>
+                        </p>
                     </div>
                     <div className='project-desc'>
                         <p>A fan-made search engine to filter Pokémon cards based on their attributes.</p>
@@ -91,14 +137,14 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='projects-grid'>
+                <div className='project'>
                     <div className='project-label'>
                         <h3>
                             CLI Guessing Game
                         </h3>
-                        <h4>
+                        <p>
                             <a href='https://github.com/tthecoder15/Pokemon-Card-Guessing-Game-CLI-Application' target='_blank'><em>Github Repo</em></a>
-                        </h4>
+                        </p>
                     </div>
                     <div className='project-desc'>
                         <p>A terminal game where players are presented with clues and must guess a mystery Pokémon card from the original six expansions.</p>
