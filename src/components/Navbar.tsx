@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Hamburger from "hamburger-react";
+// import Hamburger from "hamburger-react";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false)
+  // const [isOpen, setOpen] = useState(false)
 
   return (
     <>
