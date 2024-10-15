@@ -72,9 +72,10 @@ const HomePage = () => {
 
             </div>
 
-            <div id='projects'>
+            
                 
                 <h2 className='section-heading'>Key Projects</h2>
+                <div id='projects'>
                 <div className='project'>
                     <div className='project-label'>
                         <h3>
@@ -93,6 +94,9 @@ const HomePage = () => {
                         <a href='https://pawfect-care.netlify.app/' target='_blank'>
                             <img className='proj-ss' src='/project-ss/pc-3-booking-form.png'/>
                         </a>
+                    </div>
+                    <div className="skills">
+                        <h5>React</h5><h5>Javascript</h5><h5>Vite</h5><h5>Node.js</h5><h5>Express</h5><h5>MongoDB</h5><h5>Jest</h5>
                     </div>
                 </div>
 
@@ -115,6 +119,9 @@ const HomePage = () => {
                             <img className='proj-ss' src='/project-ss/ct-1-post-comment.png'/>
                         </a>
                     </div>
+                    <div className="skills">
+                        <h5>Python</h5><h5>Flask</h5><h5>PostgreSQL</h5><h5>SQLAlchemy</h5><h5>marshmallow</h5><h5>JWT</h5>
+                    </div>
                 </div>
 
                 <div className='project'>
@@ -135,6 +142,9 @@ const HomePage = () => {
                             <img className='proj-ss' src='/project-ss/pts-search-2.png'/>
                         </a>
                     </div>
+                    <div className="skills">
+                        <h5>React</h5><h5>Javascript</h5><h5>Vite</h5>
+                    </div>
                 </div>
 
                 <div className='project'>
@@ -154,6 +164,9 @@ const HomePage = () => {
                         <a href='https://github.com/tthecoder15/Pokemon-Card-Guessing-Game-CLI-Application?tab=readme-ov-file#help' target='_blank'>
                             <img className='proj-ss' src='/project-ss/cli-2-correct-guess.png'/>
                         </a>
+                    </div>
+                    <div className="skills">
+                        <h5>Python</h5><h5>pytest</h5>
                     </div>
                 </div>
                 

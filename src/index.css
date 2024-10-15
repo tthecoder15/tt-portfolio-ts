@@ -90,7 +90,7 @@ h1 {
 }
 
 :root {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* Generic styling for page content*/
@@ -174,7 +174,7 @@ h1 {
 }
 
 #projects .project:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.01); */
   opacity: 1; 
 }
 
@@ -184,10 +184,12 @@ h1 {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: 
       "proj-label proj-desc"
-      "proj-ss proj-ss";
+      "proj-ss proj-ss"
+      "proj-skills proj-skills";
   gap: 0 1.5rem;
   padding: 0 1rem;
   transition: 1.2s;
+  margin-top: 0.5rem;
 }
 
 
@@ -218,6 +220,7 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5rem;
   opacity: 0.9;
   transition: 0.2s;
   border: 3px solid transparent;
@@ -226,6 +229,32 @@ h1 {
 .proj-ss-cont:hover img {
   opacity: 1;
   border: 3px solid #535bf2;
+}
+
+/* Project skills section */
+.skills h5 {
+  display: block;
+  margin: 0.3rem 0.3rem;
+  padding: 0.5rem;
+  background-color:#213547;
+  /* border-radius: 50%; */
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+.skills h5:hover {
+  border: 2px solid #535bf2;
+}
+
+.skills {
+  grid-area: proj-skills;
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Navbar */
